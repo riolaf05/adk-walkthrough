@@ -90,6 +90,12 @@ pip3 install 'google-cloud-aiplatform[agent_engines]'
 
 Note that the remote agent at AgentEngine could be supported only in Python '3.8', '3.9', '3.10', '3.11', '3.12' at the moment.
 
+## Setup MCP SSE server with MCP-Proxy
+
+```shell
+mcp-proxy -e TAVILY_API_KEY <key> --sse-port 8080 -- npx --arg1 -y --arg2 tavily-mcp@0.1.4
+```
+
 ## Contributing
 
 We welcome contributions from the community! Whether it's bug reports, feature requests, documentation improvements, or code contributions.
@@ -101,3 +107,11 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## Author
 
 Dr Sokratis Kartakis
+
+## References
+
+* [ADK Tools](https://google.github.io/adk-docs/)
+
+* [ADK Walkthough](https://github.com/sokart/adk-walkthrough)
+
+* [Connect Airbnb MCP Server with Google ADK — MCP and Agent Development Kit](https://medium.aiplanet.com/connect-airbnb-mcp-server-with-google-adk-mcp-and-agent-development-kit-3a3976b7b4ec)

@@ -9,7 +9,7 @@ from google.adk.sessions import InMemorySessionService
 from google.genai import types
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(override=True) # Load environment variables from .env file
 
 # Get the model ID from the environment variable
 MODEL = os.getenv("MODEL", "gemini-2.0-flash-001") # The model ID for the agent
