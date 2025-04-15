@@ -17,7 +17,7 @@ async def get_tools_async():
     tools, exit_stack = await MCPToolset.from_server(
         connection_params=StdioServerParameters(
         command='python',  
-        args=["-m", "mcp_server_calculator"],
+        args=["-m", "mcp_server_calculator"], #pip install mcp-server-calculator
           )
         )
     print("MCP Toolset created successfully.")
